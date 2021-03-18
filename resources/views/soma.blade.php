@@ -16,8 +16,6 @@
 </head>
 <body>
     <div class="container">
-        {{-- mt : margin top  --}}
-        {{-- CTRL + / : Comentário --}}
 
         {{-- Início do Cabeçalho --}}
         <div class="row mt-2">
