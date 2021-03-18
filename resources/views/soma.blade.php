@@ -7,8 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Calculadora 2</h1>
-    <span>Teste</span>
-    <h1>Nome</h1>
+    <h1>Calculadora</h1>    
 </body>
 </html>
