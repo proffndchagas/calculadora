@@ -18,5 +18,7 @@ Route::get('/', function () {
 });
 
 // Route::get ('/soma', ['\App\Http\Controllers\CalculadoraController', 'soma']);
-Route::get ('/soma', '\App\Http\Controllers\CalculadoraController@soma');
+Route::get ('/soma', '\App\Http\Controllers\CalculadoraController@soma')->name('carregarSoma');
+//CRIAR ROTA GET COM TODAS AS FUNCOES - /calculadora
+Route::post ('/calcular-soma', '\App\Http\Controllers\CalculadoraController@calcularSoma')->name('somar');
 // Route::get ( 'rota', 'controller@funcao');

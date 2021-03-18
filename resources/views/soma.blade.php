@@ -25,24 +25,27 @@
 
         {{-- Inicio do Corpo --}}
         <div class="row mt-2">
-            
+                       
             <div class="row">
                 <h1>Calculadora</h1>  
-            </div>  
+            </div> 
+
             <div class="row">
-                <form>
+                <form method="POST" action="{{ route('somar') }}">
+                    @csrf
                     {{-- mb : margin-bottom --}}
                     <div class="mb-3">
                       <label for="primeiroValor" class="form-label">Primeiro valor</label>
-                      <input type="number" class="form-control" id="primeiroValor">
+                      <input type="number" class="form-control" id="primeiroValor" name="valor1">
                     </div>
                     <div class="mb-3">
                         <label for="segundoValor" class="form-label">Segundo valor</label>
-                        <input type="number" class="form-control" id="segundoValor">
+                        <input type="number" class="form-control" id="segundoValor" name="valor2">
                       </div>                   
                     <button type="submit" class="btn btn-primary">Somar</button>
-                  </form>
-            </div>
+                </form>
+            </div>     
+            
 
         </div>
         {{-- Final do Corpo --}}
